@@ -22,6 +22,10 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
+  @media screen and (min-width: 960px) {
+    background-color: tomato;
+  }
 }
 
 .App-link {
