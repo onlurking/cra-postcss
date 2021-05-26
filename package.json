@@ -16,7 +16,7 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
-    "lint:css": "stylelint 'src/**/*.css'",
+    "lint:css": "stylelint  \"src/**/*.css\"",
     "lint:css:fix": "npm run lint:css -- --fix",
     "lint:js": "eslint . --ext .js,.jsx",
     "lint:js:fix": "npm run lint:js -- --fix"
@@ -49,26 +49,9 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^1.7.0",
-    "husky": "^6.0.0",
-    "lint-staged": "^11.0.0",
     "postcss-nested": "^4.2.3",
     "prettier": "^2.3.0",
     "stylelint": "^13.13.1",
     "stylelint-config-lintheus": "^1.2.2"
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx}": [
-      "eslint . --fix",
-      "git add"
-    ],
-    "src/**/*.css": [
-      "stylelint --fix",
-      "git add"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   }
 }
